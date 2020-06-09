@@ -5,4 +5,9 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
+    background-color: #130C0C;
+}
+
+.logo {
+    width: 200px;
 }
