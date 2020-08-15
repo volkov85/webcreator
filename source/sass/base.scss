@@ -1,0 +1,11 @@
+body {
+  font-family: $fontBase;
+  font-size: $fontBaseSize;
+  min-width: $widthMobile;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+}

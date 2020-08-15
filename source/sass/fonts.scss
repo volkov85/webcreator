@@ -1,0 +1,25 @@
+$fontBase: "Roboto", "Arial", sans-serif;
+
+$fontSecondary: "Arial", "Calibri", sans-serif;
+
+$fontBaseSize: 18px;
+$fontBaseColor: #dadada;
+
+$fontMainTitleSize: 64px;
+$fontSecTitleSize: 48px;
+
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/roboto-v20-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin_cyrillic-500.woff") format("woff");
+}
