@@ -23,7 +23,7 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass({includePaths: require('node-normalize-scss').includePaths}))
+    .pipe(sass({includePaths: require("scss-resets").includePaths}))
     .pipe(postcss([
       autoprefixer()
     ]))
