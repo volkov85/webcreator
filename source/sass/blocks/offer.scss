@@ -1,0 +1,11 @@
+.offer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: solid $secondaryTextColor 2px;
+}
+
+.offer__title {
+  font-size: $fontMainTitleSize;
+  font-weight: $fontOfferWeight;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+.main-nav__list {
+  list-style: none;
+  width: 380px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__item a {
+  color: $baseTextColor;
+}
