@@ -1,0 +1,28 @@
+.about {
+  border-bottom: solid $secondaryTextColor 2px;
+}
+
+.about__title {
+  font-size: $fontSecTitleSize;
+  font-weight: $fontOfferWeight;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.about__photo {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.about__desc {
+  font-weight: $fontTextWeight;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.about__desc--colored {
+  color: $secondaryTextColor;
+}
