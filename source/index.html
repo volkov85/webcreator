@@ -66,6 +66,31 @@
           <img src="img/portfolio_mini_6.jpg" alt="Portfolio image mini" width="360" height="200">
         </div >
       </section>
+      <section class="contact">
+        <h2 class="contact__title">
+          Contact me
+        </h2>
+        <p class="contact__desc">
+          Thanks for taking the time to reach out. How can I help you today?
+        </p>
+        <form class="contact__form" method="post">
+          <fieldset class="contact__fields" title="Form fields">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Homepage">
+            <input type="hidden" name="admin_email" value="admin@webcreator.top">
+            <input type="hidden" name="form_subject" value="Message">
+            <!-- END Hidden Required Fields -->
+            <div class="contact__wrapper">
+              <input type="text" class="contact__input" placeholder="Name" name="client_name" required autocomplete="off">
+              <input type="email" class="contact__input contact__input--mail" name="client_mail" placeholder="Email" required autocomplete="off">
+              <textarea class="contact__input contact__input--message" name="client_message" placeholder="Message" maxlength="150" required autocomplete="off"></textarea>
+            </div>
+          </fieldset>
+          <button class="contact_button" type="submit">
+            Send message
+          </button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
     </footer>
