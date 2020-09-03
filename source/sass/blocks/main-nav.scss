@@ -8,4 +8,8 @@
 
 .main-nav__item a {
   color: $baseTextColor;
+
+  &:hover {
+    color: $secondaryTextColor;
+  }
 }
