@@ -76,7 +76,7 @@ gulp.task("html", function () {
 gulp.task("jscompress", function () {
   return pipeline(
       gulp.src("source/js/*.js"),
-      uglify(),
+      // uglify(),
       gulp.dest("build/js")
   );
 });

@@ -9,6 +9,10 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <!-- <?php include 'mail.php'; ?> -->
+    <!--alert messages start-->
+    <!-- <?php echo $alert; ?> -->
+    <!--alert messages end-->
     <header class="header">
       <img class="header__logo" src="img/logo_white.svg" width="230" height="60" alt="Logotype">
       <nav class="main-nav">
@@ -20,7 +24,7 @@
             <a href="#portfolio">Portfolio</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Blog</a>
+            <a href="#!">Blog</a>
           </li>
           <li class="main-nav__item">
             <a href="#contact">Contact</a>
@@ -31,6 +35,7 @@
     <main class="main">
       <section class="offer">
         <h1 class="offer__title"><span class="offer__title--colored">Hello!</span> My name is Artyom. I design and create convenient and <span class="offer__title--colored">modern websites or interfaces.</span></h1>
+        <div id="particles-js"></div>
       </section>
       <section class="about">
         <h2 class="about__title" id="about">
@@ -73,20 +78,15 @@
         <p class="contact__desc">
           Thanks for taking the time to reach out. How can I help you today?
         </p>
-        <form class="contact__form" method="post">
+        <form class="contact__form" action="" method="post">
           <fieldset class="contact__fields" title="Form fields">
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="Homepage">
-            <input type="hidden" name="admin_email" value="admin@webcreator.top">
-            <input type="hidden" name="form_subject" value="Message">
-            <!-- END Hidden Required Fields -->
             <div class="contact__wrapper">
-              <input type="text" class="contact__input" placeholder="Name" name="client_name" required autocomplete="off">
-              <input type="email" class="contact__input contact__input--mail" name="client_mail" placeholder="Email" required autocomplete="off">
-              <textarea class="contact__input contact__input--message" name="client_message" placeholder="Message" maxlength="150" required autocomplete="off"></textarea>
+              <input type="text" class="contact__input" placeholder="Name" name="name" required autocomplete="off">
+              <input type="email" class="contact__input contact__input--mail" name="email" placeholder="Email" required autocomplete="off">
+              <textarea class="contact__input contact__input--message" name="message" placeholder="Message" maxlength="150" required autocomplete="off"></textarea>
             </div>
           </fieldset>
-          <button class="contact_button" type="submit">
+          <button class="contact_button" type="submit" name="submit">
             Send message
           </button>
         </form>
@@ -148,4 +148,18 @@
         </div>
     </footer>
   </body>
+  <script src="js/particles.min.js"></script>
+  <script src="js/particlesJS.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    var alertClose = document.querySelector('.alert__close');
+    alertClose.addEventListener('click', function (evt) {
+        var alertPopup = document.querySelector('.alert-success');
+        alertPopup.style = 'visibility: hidden;';
+        });
+  </script> -->
 </html>
