@@ -40,3 +40,15 @@ $("a").on("click", function (evt) {
     });
   }
 });
+
+
+if(window.history.replaceState){
+  window.history.replaceState(null, null, window.location.href);
+}
+var alertClose = document.querySelector('.alert__close');
+if (alertClose) {
+  alertClose.addEventListener('click', function (evt) {
+      var alertPopup = document.querySelector('.alert-success');
+      alertPopup.style = 'visibility: hidden;';
+      });
+}

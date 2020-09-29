@@ -39,6 +39,14 @@
   align-items: center;
 }
 
+.footer__social svg {
+  fill: $secondaryTextColor;
+
+  &:hover {
+    fill: $secondaryBackColor;
+  }
+}
+
 .footer__item {
   padding-right: 25px;
 }
