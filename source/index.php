@@ -83,9 +83,12 @@
             <div class="contact__wrapper">
               <input type="text" class="contact__input" placeholder="Name" name="name" required autocomplete="off">
               <input type="email" class="contact__input contact__input--mail" name="email" placeholder="Email" required autocomplete="off">
-              <textarea class="contact__input contact__input--message" name="message" placeholder="Message" maxlength="150" required autocomplete="off"></textarea>
+              <textarea class="contact__input contact__input--message" name="message" placeholder="Message" maxlength="500" required autocomplete="off"></textarea>
             </div>
           </fieldset>
+          <div class="captcha" style="display: flex;justify-content: center;margin: 20px;">
+            <div class="g-recaptcha" data-sitekey="6LcTx9EZAAAAALBHPXzglvsMb0yCSqoKTWQdeeI0" data-theme="dark"></div>
+          </div>
           <button class="contact_button" type="submit" name="submit">
             Send message
           </button>
@@ -148,6 +151,7 @@
         </div>
     </footer>
   </body>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/particles.min.js"></script>
   <script src="js/particlesJS.js"></script>
   <script src="js/jquery.min.js"></script>
