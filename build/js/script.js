@@ -52,3 +52,30 @@ if (alertClose) {
       alertPopup.style = 'visibility: hidden;';
       });
 }
+
+let portfolioCards = document.querySelectorAll('.portfolio__cards-button');
+let portfolioDarkerOstltd = document.querySelector('.portfolio__darker--ostltd');
+let portfolioDarkerNda = document.querySelector('.portfolio__darker--nda');
+let portfolioButtonClose = document.querySelectorAll('.portfolio__button-close');
+let portfolioDarker = document.querySelectorAll('.portfolio__darker');
+
+portfolioButtonClose.forEach(function(item) {
+  item.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    portfolioDarker.forEach(function(item) {
+      item.classList.remove('portfolio__darker--opened');
+    })
+  });
+});
+
+portfolioCards.forEach(function(item) {
+  item.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    if (item.classList.contains('portfolio__cards-button--ostltd')) {
+      portfolioDarkerOstltd.classList.add('portfolio__darker--opened');
+    }
+    if (item.classList.contains('portfolio__cards-button--nda')) {
+      portfolioDarkerNda.classList.add('portfolio__darker--opened');
+    }
+  });
+});

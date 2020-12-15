@@ -63,12 +63,24 @@
           Interested in the entire <span class="portfolio__desc--colored">frontend</span> spectrum and working on ambitious projects with positive people.
         </p>
         <div class="portfolio__cards">
-          <img src="img/portfolio_mini_1.jpg" alt="Portfolio image mini" width="360" height="200">
-          <img src="img/portfolio_mini_2.jpg" alt="Portfolio image mini" width="360" height="200">
-          <img src="img/portfolio_mini_3.jpg" alt="Portfolio image mini" width="360" height="200">
-          <img src="img/portfolio_mini_4.jpg" alt="Portfolio image mini" width="360" height="200">
-          <img src="img/portfolio_mini_5.jpg" alt="Portfolio image mini" width="360" height="200">
-          <img src="img/portfolio_mini_6.jpg" alt="Portfolio image mini" width="360" height="200">
+          <button class="portfolio__cards-button portfolio__cards-button--nda">
+            <img src="img/portfolio_mini_1.jpg" alt="Portfolio image mini" width="360" height="200">
+          </button>
+          <button class="portfolio__cards-button">
+            <img src="img/portfolio_mini_2.jpg" alt="Portfolio image mini" width="360" height="200">
+          </button>
+          <button class="portfolio__cards-button portfolio__cards-button--ostltd">
+            <img src="img/portfolio_mini_3.jpg" alt="Portfolio image mini" width="360" height="200">
+          </button>
+          <button class="portfolio__cards-button">
+            <img src="img/portfolio_mini_4.jpg" alt="Portfolio image mini" width="360" height="200">
+          </button>
+          <button class="portfolio__cards-button">
+            <img src="img/portfolio_mini_5.jpg" alt="Portfolio image mini" width="360" height="200">
+          </button>
+          <button class="portfolio__cards-button">
+            <img src="img/portfolio_mini_6.jpg" alt="Portfolio image mini" width="360" height="200">
+          </button>
         </div >
       </section>
       <section class="contact">
@@ -128,7 +140,7 @@
               <path d="M15 0C6.76117 0 0 6.76117 0 15C0 22.0306 4.93332 28.4171 11.4844 30V25.0374C10.8353 25.1795 10.2379 25.1836 9.5771 24.9889C8.69064 24.7272 7.97035 24.1367 7.43568 23.2363C7.09488 22.6614 6.49086 22.0379 5.86075 22.0837L5.70625 20.3327C7.06879 20.216 8.24753 21.1629 8.94722 22.3384C9.25804 22.8612 9.61578 23.1676 10.0749 23.3031C10.5187 23.4338 10.9953 23.3711 11.5505 23.175C11.6899 22.0633 12.1992 21.6472 12.5839 21.0612V21.0603C8.67691 20.4776 7.11983 18.4048 6.50185 16.7688C5.68291 14.5965 6.12236 11.8826 7.5705 10.1676C7.59865 10.1342 7.64946 10.0468 7.62978 9.98566C6.96579 7.97997 7.77489 6.3208 7.80464 6.14479C8.57094 6.37138 8.69545 5.91682 11.1333 7.39792L11.5546 7.65106C11.7309 7.75612 11.6755 7.69615 11.8517 7.68288C12.8696 7.40639 13.9426 7.25372 14.9998 7.23999C16.065 7.25372 17.1311 7.40639 18.1911 7.69409L18.3275 7.70782C18.3156 7.70599 18.3646 7.69913 18.4467 7.65015C21.492 5.80559 21.3826 6.40846 22.1992 6.14296C22.2288 6.3192 23.0271 8.00537 22.3702 9.98566C22.2816 10.2585 25.0104 12.7572 23.4979 16.7681C22.8799 18.4048 21.3231 20.4776 17.4161 21.0603V21.0612C17.9169 21.8246 18.5186 22.2306 18.5154 23.8053V30C25.0667 28.4171 29.9998 22.0306 29.9998 15C30 6.76117 23.2388 0 15 0V0Z"/>
             </svg>
           </a>
-          <a class="footer__item footer__item--vk" href="https://vk.com/volkov.creator">
+          <!-- <a class="footer__item footer__item--vk" href="https://vk.com/volkov.creator">
             <span class="visually-hidden">Vkontakte</span>
             <svg width="50" height="50" viewbox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
               <path d="M44.5058 29.9512L44.4787 29.9259C44.0518 29.5311 42.7442 28.256 42.3032 27.6988C41.7855 27.0035 41.9049 26.5479 42.2929 25.8653C42.7831 25.0026 43.7654 23.6794 44.8049 22.2782C48.1343 17.7917 50.2839 14.6858 49.8414 12.4797L49.603 11.3013L37.3071 11.3067C37.2639 11.4229 36.6223 14.2471 33.9146 19.0561C31.9512 22.5431 30.6634 23.6385 30.2098 23.8319L30.1396 23.8105C29.992 23.6278 29.7341 23.1347 29.6281 21.8639C29.5174 20.5326 29.6155 18.9208 29.7104 17.3621C29.8215 15.5344 29.9172 13.9558 29.6879 12.8264L29.3145 10.9864C28.8632 10.9141 27.2111 10.2755 22.6079 10.2269C18.6226 10.186 17.4519 10.7628 16.877 11.2711L14.9754 12.9525L17.379 13.7628C18.2938 14.0712 18.5975 14.4271 18.8465 16.191C19.0091 17.3407 19.0941 19.2728 18.9186 20.9978C18.6665 23.4711 18.0619 23.9313 18.0306 23.9557C17.9264 23.9202 17.0433 23.533 15.5102 20.2853C14.4467 18.0329 13.5144 15.3685 12.833 13.423C12.0533 11.1951 12.1937 11.6694 11.7981 10.6168L-0.0976562 10.6164L0.672151 12.6116C3.88146 20.9374 6.82603 27.4393 10.7666 32.1092C15.1203 37.2687 20.5311 39.9702 27.8195 39.9702H29.2843V38.5025C29.2843 37.1303 29.3976 36.1423 29.6406 35.3932C29.789 34.9368 29.9863 34.5596 30.1934 34.164C30.5009 33.5815 30.8015 33.3319 30.9655 33.2948C31.1143 33.2608 31.3759 33.3701 31.6659 33.5868C32.4982 34.2087 33.1589 35.0259 33.8586 35.8912C34.8679 37.1399 35.9116 38.4306 37.5676 39.2757C38.4724 39.7374 40.1311 39.9706 41.0439 39.9706C41.2854 39.9706 49.8918 39.9702 49.9024 39.9702L49.8395 38.4421C49.7457 36.1572 47.9508 33.3002 44.5058 29.9512ZM41.1008 37.0348H41.0771C40.4477 37.0451 39.2464 36.8383 38.897 36.6602C37.7961 36.0984 37.0267 35.1463 36.1352 34.0439C35.3528 33.0758 34.5437 32.0748 33.4172 31.2335C32.5062 30.5528 31.6788 30.3536 31.0219 30.3536C30.7595 30.3536 30.5237 30.3854 30.3216 30.4312C29.559 30.6032 28.4684 31.1529 27.6013 32.796C27.3568 33.2635 27.0794 33.7928 26.8548 34.4854C26.6194 35.2101 26.4729 36.0154 26.4031 36.995C20.9107 36.6824 16.6249 34.5053 13.0039 30.2141C9.63747 26.2242 6.98892 20.6434 4.18397 13.5507C4.38691 13.5507 9.47229 13.5514 9.77251 13.5514C9.86445 13.8102 9.96363 14.0938 10.0689 14.3942C10.8032 16.493 11.8092 19.3668 12.9944 21.8176C14.6916 25.3271 16.2415 26.8923 18.0195 26.8923C18.9072 26.8923 19.7033 26.5154 20.3217 25.8018C21.2033 24.7848 21.7152 23.1061 21.8869 20.6694C22.0223 18.748 21.8964 16.8343 21.7476 15.7797C21.6248 14.9121 21.4497 14.0013 21.0225 13.1853C22.8432 13.1031 25.2812 13.233 26.8258 13.4551C26.9662 14.2211 26.8746 15.7266 26.7861 17.1832C26.5721 20.7019 26.3512 24.333 28.2101 26.0319C28.537 26.3308 28.8838 26.491 28.8937 26.4975L29.8398 26.7883C30.2048 26.6756 32.3193 27.7504 36.3232 20.7493C37.6061 18.5061 38.8005 15.9212 39.4437 14.2329C40.9352 14.2299 46.0168 14.2356 46.6138 14.2364C45.7681 16.1012 43.7638 18.761 42.4539 20.5265C41.3117 22.0653 40.3256 23.3943 39.7469 24.4125C38.672 26.3041 38.8528 27.99 39.9724 29.4772L39.9899 29.5002C40.6148 30.2971 42.1578 31.7724 42.4779 32.0698C44.7965 34.3253 45.9138 35.9455 46.4456 37.0344H41.1008V37.0348Z"/>
@@ -147,9 +159,91 @@
             <svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4.39453 30H14.1797V19.3359H10.6641V15.8203H14.1797V11.4258C14.1797 9.00261 16.151 7.03125 18.5742 7.03125H22.9688V10.5469H19.4531C18.4838 10.5469 17.6953 11.3354 17.6953 12.3047V15.8203H22.8101L22.2242 19.3359H17.6953V30H25.6055C28.0286 30 30 28.0286 30 25.6055V4.39453C30 1.97136 28.0286 0 25.6055 0H4.39453C1.97136 0 0 1.97136 0 4.39453V25.6055C0 28.0286 1.97136 30 4.39453 30ZM1.75781 4.39453C1.75781 2.94067 2.94067 1.75781 4.39453 1.75781H25.6055C27.0593 1.75781 28.2422 2.94067 28.2422 4.39453V25.6055C28.2422 27.0593 27.0593 28.2422 25.6055 28.2422H19.4531V21.0938H23.7133L24.8852 14.0625H19.4531V12.3047H24.7266V5.27344H18.5742C15.1817 5.27344 12.4219 8.03329 12.4219 11.4258V14.0625H8.90625V21.0938H12.4219V28.2422H4.39453C2.94067 28.2422 1.75781 27.0593 1.75781 25.6055V4.39453Z"/>
             </svg>
-          </a>
+          </a> -->
         </div>
     </footer>
+    <div class="portfolio__darker portfolio__darker--nda">
+      <div class="portfolio__card-inner">
+        <div class="portfolio__card-images">
+          <a href="img/portfolio_full_2.jpg" target="blank">
+            <img src="img/portfolio_maxi_2_1.jpg" alt="Portfolio image" width="230" height="176">
+          </a>
+          <a href="img/portfolio_full_2.jpg" target="blank">
+            <img src="img/portfolio_maxi_2_2.jpg" alt="Portfolio image" width="230" height="215">
+          </a>
+          <a href="img/portfolio_full_2.jpg" target="blank">
+            <img src="img/portfolio_maxi_2_3.jpg" alt="Portfolio image" width="230" height="175">
+          </a>
+          <a href="img/portfolio_full_2.jpg" target="blank">
+            <img src="img/portfolio_maxi_2_4.jpg" alt="Portfolio image" width="230" height="188">
+          </a>
+        </div>
+        <div class="portfolio__card-descs">
+          <button class="portfolio__button-close">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="23.2759" y="24.9999" width="32.9169" height="2.43829" transform="rotate(-135 23.2759 24.9999)" fill="#FFA04A"/>
+              <rect y="23.2758" width="32.9169" height="2.43829" transform="rotate(-45 0 23.2758)" fill="#FFA04A"/>
+            </svg>
+          </button>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Organization:</span> National Digital Aggregator
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Links:</span> <a class="portfolio__card-link" href="https://ndawp.webcreator.top" target="blank">ndawp.webcreator.top</a>
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">My role in the project:</span> Frontend development
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Technologies and tools:</span> Figma, HTML5, CSS3, JS, PHP, SASS, Gulp, WordPress
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Description:</span> This site was created for a company that distributes popular Russian music on various platforms. The site is fully responsive, correctly displayed in all possible resolutions and has support for Retina and 4k displays.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__darker portfolio__darker--ostltd">
+      <div class="portfolio__card-inner">
+        <div class="portfolio__card-images">
+          <a href="img/portfolio_full_1.jpg" target="blank">
+            <img src="img/portfolio_maxi_1.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_1.jpg" target="blank">
+            <img src="img/portfolio_maxi_2.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_1.jpg" target="blank">
+            <img src="img/portfolio_maxi_3.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_1.jpg" target="blank">
+            <img src="img/portfolio_maxi_4.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+        </div>
+        <div class="portfolio__card-descs">
+          <button class="portfolio__button-close">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="23.2759" y="24.9999" width="32.9169" height="2.43829" transform="rotate(-135 23.2759 24.9999)" fill="#FFA04A"/>
+              <rect y="23.2758" width="32.9169" height="2.43829" transform="rotate(-45 0 23.2758)" fill="#FFA04A"/>
+            </svg>
+          </button>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Organization:</span> OSTLtd Company
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Links:</span> <a class="portfolio__card-link" href="https://ostltd.kz" target="blank">ostltd.kz</a>, <a class="portfolio__card-link" href="https://ost.webcreator.top" target="blank">ost.webcreator.top</a>
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">My role in the project:</span> Full cycle - from a prototype to a functioning website.
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Technologies and tools:</span> Figma, HTML5, CSS3, JS, PHP, SASS, Gulp
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Description:</span> This site for a company that is engaged in wholesale and retail sale of materials for the creation of advertising structures. The main priority is bright colors, modern design, easy navigation, structured catalog, feedback.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/particles.min.js"></script>

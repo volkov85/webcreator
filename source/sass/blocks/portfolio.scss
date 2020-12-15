@@ -32,3 +32,94 @@
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
 }
+
+.portfolio__cards-button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  transition: 0.2s;
+  box-sizing: border-box;
+  width: 360px;
+  height: 200px;
+
+  &:hover,
+  &:focus {
+    filter: drop-shadow(1px 1px 5px #ffa04a);
+  }
+}
+
+.portfolio__button-close {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  align-self: flex-end;
+}
+
+.portfolio__darker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 12, 12, 0.9);
+  z-index: 1000;
+  display: none;
+
+  &--opened {
+    display: inherit;
+  }
+}
+
+.portfolio__card-inner {
+  position: fixed;
+  top: calc(50vh - 230px);
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1001;
+  display: flex;
+  animation: bounce 0.6s;
+}
+
+.portfolio__card-descs {
+  width: 570px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__card-desc {
+  color: $baseTextColor;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  &--title {
+    color: #ffa04a;
+  }
+
+  a {
+    color: $baseTextColor;
+  }
+}
+
+.portfolio__card-images {
+  width: 490px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, auto);
+}
+
+.portfolio__card-link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    color: #ffa04a;
+  }
+}
