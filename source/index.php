@@ -66,13 +66,13 @@
           <button class="portfolio__cards-button portfolio__cards-button--nda">
             <img src="img/portfolio_mini_1.jpg" alt="Portfolio image mini" width="360" height="200">
           </button>
-          <button class="portfolio__cards-button">
+          <button class="portfolio__cards-button portfolio__cards-button--fantshop">
             <img src="img/portfolio_mini_2.jpg" alt="Portfolio image mini" width="360" height="200">
           </button>
           <button class="portfolio__cards-button portfolio__cards-button--ostltd">
             <img src="img/portfolio_mini_3.jpg" alt="Portfolio image mini" width="360" height="200">
           </button>
-          <button class="portfolio__cards-button">
+          <button class="portfolio__cards-button portfolio__cards-button--rapid">
             <img src="img/portfolio_mini_4.jpg" alt="Portfolio image mini" width="360" height="200">
           </button>
           <button class="portfolio__cards-button">
@@ -203,6 +203,48 @@
         </div>
       </div>
     </div>
+    <div class="portfolio__darker portfolio__darker--fantshop">
+      <div class="portfolio__card-inner">
+        <div class="portfolio__card-images">
+          <a href="img/portfolio_full_3.jpg" target="blank">
+            <img src="img/portfolio_maxi_3_1.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_3.jpg" target="blank">
+            <img src="img/portfolio_maxi_3_2.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_3.jpg" target="blank">
+            <img src="img/portfolio_maxi_3_3.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_3.jpg" target="blank">
+            <img src="img/portfolio_maxi_3_4.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+        </div>
+        <div class="portfolio__card-descs">
+          <button class="portfolio__button-close">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="23.2759" y="24.9999" width="32.9169" height="2.43829" transform="rotate(-135 23.2759 24.9999)" fill="#FFA04A"/>
+              <rect y="23.2758" width="32.9169" height="2.43829" transform="rotate(-45 0 23.2758)" fill="#FFA04A"/>
+            </svg>
+          </button>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Organization:</span> Fanttex Company
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Links:</span>
+            <a class="portfolio__card-link" href="https://fantshop.webcreator.top" target="blank">fantshop.webcreator.top</a>, <a class="portfolio__card-link" href="https://fantshop.webcreator.top/index-mobile.html" target="blank">fantshop.webcreator.top - mobile</a>
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">My role in the project:</span> Frontend development
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Technologies and tools:</span> Photoshop, HTML5, CSS3, JS, Pug, SASS, Gulp, JS Libraries
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Description:</span> This site is for a company that is engaged in the wholesale of luxury fabrics. The site is fully responsive, correctly displayed at any resolution and has a separate mobile version. Much attention was paid to optimization, validation in PageSpeed Insights and micro-markup.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="portfolio__darker portfolio__darker--ostltd">
       <div class="portfolio__card-inner">
         <div class="portfolio__card-images">
@@ -240,6 +282,48 @@
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">Description:</span> This site for a company that is engaged in wholesale and retail sale of materials for the creation of advertising structures. The main priority is bright colors, modern design, easy navigation, structured catalog, feedback.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__darker portfolio__darker--rapid">
+      <div class="portfolio__card-inner">
+        <div class="portfolio__card-images">
+          <a href="img/portfolio_full_4.jpg" target="blank">
+            <img src="img/portfolio_maxi_4_1.jpg" alt="Portfolio image" width="230" height="200">
+          </a>
+          <a href="img/portfolio_full_4.jpg" target="blank">
+            <img src="img/portfolio_maxi_4_2.jpg" alt="Portfolio image" width="230" height="200">
+          </a>
+          <a href="img/portfolio_full_4.jpg" target="blank">
+            <img src="img/portfolio_maxi_4_3.jpg" alt="Portfolio image" width="230" height="200">
+          </a>
+          <a href="img/portfolio_full_4.jpg" target="blank">
+            <img src="img/portfolio_maxi_4_4.jpg" alt="Portfolio image" width="230" height="200">
+          </a>
+        </div>
+        <div class="portfolio__card-descs">
+          <button class="portfolio__button-close">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="23.2759" y="24.9999" width="32.9169" height="2.43829" transform="rotate(-135 23.2759 24.9999)" fill="#FFA04A"/>
+              <rect y="23.2758" width="32.9169" height="2.43829" transform="rotate(-45 0 23.2758)" fill="#FFA04A"/>
+            </svg>
+          </button>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Organization:</span> Rapid Company
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Links:</span>
+            <a class="portfolio__card-link" href="https://rapidcards.webcreator.top" target="blank">rapidcards.webcreator.top</a>
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">My role in the project:</span> Frontend development
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Technologies and tools:</span> Figma, HTML5, CSS3, JS, SASS, Gulp, JS Libraries
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Description:</span> This site was created for a startup that plans to organize a social network. The peculiarity of this social network is the exchange of business cards and the establishment of contacts between businessmen with a modern interface. This interface is adaptive on all types of devices and has form validation.
           </p>
         </div>
       </div>

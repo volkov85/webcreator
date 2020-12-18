@@ -56,6 +56,8 @@ if (alertClose) {
 let portfolioCards = document.querySelectorAll('.portfolio__cards-button');
 let portfolioDarkerOstltd = document.querySelector('.portfolio__darker--ostltd');
 let portfolioDarkerNda = document.querySelector('.portfolio__darker--nda');
+let portfolioDarkerFant = document.querySelector('.portfolio__darker--fantshop');
+let portfolioDarkerRapid = document.querySelector('.portfolio__darker--rapid');
 let portfolioButtonClose = document.querySelectorAll('.portfolio__button-close');
 let portfolioDarker = document.querySelectorAll('.portfolio__darker');
 
@@ -76,6 +78,12 @@ portfolioCards.forEach(function(item) {
     }
     if (item.classList.contains('portfolio__cards-button--nda')) {
       portfolioDarkerNda.classList.add('portfolio__darker--opened');
+    }
+    if (item.classList.contains('portfolio__cards-button--fantshop')) {
+      portfolioDarkerFant.classList.add('portfolio__darker--opened');
+    }
+    if (item.classList.contains('portfolio__cards-button--rapid')) {
+      portfolioDarkerRapid.classList.add('portfolio__darker--opened');
     }
   });
 });
