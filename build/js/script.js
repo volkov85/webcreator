@@ -58,6 +58,8 @@ let portfolioDarkerOstltd = document.querySelector('.portfolio__darker--ostltd')
 let portfolioDarkerNda = document.querySelector('.portfolio__darker--nda');
 let portfolioDarkerFant = document.querySelector('.portfolio__darker--fantshop');
 let portfolioDarkerRapid = document.querySelector('.portfolio__darker--rapid');
+let portfolioDarkerAe = document.querySelector('.portfolio__darker--ae');
+let portfolioDarkerBook = document.querySelector('.portfolio__darker--book');
 let portfolioButtonClose = document.querySelectorAll('.portfolio__button-close');
 let portfolioDarker = document.querySelectorAll('.portfolio__darker');
 
@@ -85,5 +87,24 @@ portfolioCards.forEach(function(item) {
     if (item.classList.contains('portfolio__cards-button--rapid')) {
       portfolioDarkerRapid.classList.add('portfolio__darker--opened');
     }
+    if (item.classList.contains('portfolio__cards-button--ae')) {
+      portfolioDarkerAe.classList.add('portfolio__darker--opened');
+    }
+    if (item.classList.contains('portfolio__cards-button--book')) {
+      portfolioDarkerBook.classList.add('portfolio__darker--opened');
+    }
   });
+});
+
+// Menu toggler
+let menuOpener = document.querySelector('.header__menu-toggle');
+let menuCloser = document.querySelector('.header__toggle--close');
+let menuMobile = document.querySelector('.menu-mobile');
+
+menuOpener.addEventListener('click', function () {
+  menuMobile.classList.remove('menu-mobile--closed');
+});
+
+menuCloser.addEventListener('click', function () {
+  menuMobile.classList.add('menu-mobile--closed');
 });

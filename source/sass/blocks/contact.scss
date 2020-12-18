@@ -20,11 +20,19 @@
   text-align: center;
   margin: 0 auto;
   padding-bottom: 40px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .contact__form {
   width: 600px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .contact__fields {
@@ -53,17 +61,30 @@
   &::placeholder {
     color: rgba(218, 218, 218, 0.5);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .contact__input--mail {
   width: 255px;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .contact__input--message {
   width: 600px;
   height: 190px;
   resize: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .contact_button {

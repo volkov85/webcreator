@@ -3,6 +3,11 @@
   padding-bottom: 100px;
   border-bottom: solid $secondaryTextColor 2px;
   position: relative;
+
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .offer__title {
@@ -11,6 +16,11 @@
   line-height: 75px;
   margin: 0;
   user-select: none;
+
+  @media (max-width: 768px) {
+    font-size: 35px;
+    text-align: center;
+  }
 }
 
 .offer__title--colored {

@@ -23,14 +23,38 @@
           <li class="main-nav__item">
             <a href="#portfolio">Portfolio</a>
           </li>
-          <li class="main-nav__item">
-            <a href="#!">Blog</a>
+          <li class="main-nav__item main-nav__item--blog">
+            <a href="#">Blog</a>
           </li>
           <li class="main-nav__item">
             <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
+      <button class="header__menu-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      <div class="menu-mobile menu-mobile--closed">
+        <div class="menu-mobile__top">
+          <button class="header__toggle header__toggle--close" type="button">
+            <span class="visually-hidden">Close menu</span>
+          </button>
+        </div>
+        <ul class="menu-mobile__inner">
+          <li>
+            <a class="menu__item__inner" href="index.php">MAIN</a>
+          </li>
+          <li>
+            <a  class="menu__item__inner" href="index.php#about">ABOUT</a>
+          </li>
+          <li>
+            <a class="menu__item__inner" href="index.php#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a class="menu__item__inner" href="index.php#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main class="main">
       <section class="offer">
@@ -75,10 +99,10 @@
           <button class="portfolio__cards-button portfolio__cards-button--rapid">
             <img src="img/portfolio_mini_4.jpg" alt="Portfolio image mini" width="360" height="200">
           </button>
-          <button class="portfolio__cards-button">
+          <button class="portfolio__cards-button portfolio__cards-button--ae">
             <img src="img/portfolio_mini_5.jpg" alt="Portfolio image mini" width="360" height="200">
           </button>
-          <button class="portfolio__cards-button">
+          <button class="portfolio__cards-button portfolio__cards-button--book">
             <img src="img/portfolio_mini_6.jpg" alt="Portfolio image mini" width="360" height="200">
           </button>
         </div >
@@ -186,7 +210,7 @@
             </svg>
           </button>
           <p class="portfolio__card-desc">
-            <span class="portfolio__card-desc--title">Organization:</span> National Digital Aggregator
+            <span class="portfolio__card-desc--title">Organisation:</span> National Digital Aggregator
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">Links:</span> <a class="portfolio__card-link" href="https://ndawp.webcreator.top" target="blank">ndawp.webcreator.top</a>
@@ -227,7 +251,7 @@
             </svg>
           </button>
           <p class="portfolio__card-desc">
-            <span class="portfolio__card-desc--title">Organization:</span> Fanttex Company
+            <span class="portfolio__card-desc--title">Organisation:</span> Fanttex Company
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">Links:</span>
@@ -269,7 +293,7 @@
             </svg>
           </button>
           <p class="portfolio__card-desc">
-            <span class="portfolio__card-desc--title">Organization:</span> OSTLtd Company
+            <span class="portfolio__card-desc--title">Organisation:</span> OSTLtd Company
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">Links:</span> <a class="portfolio__card-link" href="https://ostltd.kz" target="blank">ostltd.kz</a>, <a class="portfolio__card-link" href="https://ost.webcreator.top" target="blank">ost.webcreator.top</a>
@@ -310,7 +334,7 @@
             </svg>
           </button>
           <p class="portfolio__card-desc">
-            <span class="portfolio__card-desc--title">Organization:</span> Rapid Company
+            <span class="portfolio__card-desc--title">Organisation:</span> Rapid Company
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">Links:</span>
@@ -324,6 +348,90 @@
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">Description:</span> This site was created for a startup that plans to organize a social network. The peculiarity of this social network is the exchange of business cards and the establishment of contacts between businessmen with a modern interface. This interface is adaptive on all types of devices and has form validation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__darker portfolio__darker--ae">
+      <div class="portfolio__card-inner">
+        <div class="portfolio__card-images">
+          <a href="img/portfolio_full_5.jpg" target="blank">
+            <img src="img/portfolio_maxi_5_1.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_5.jpg" target="blank">
+            <img src="img/portfolio_maxi_5_2.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_5.jpg" target="blank">
+            <img src="img/portfolio_maxi_5_3.jpg" alt="Portfolio image" width="230" height="227">
+          </a>
+          <a href="img/portfolio_full_5.jpg" target="blank">
+            <img src="img/portfolio_maxi_5_4.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+        </div>
+        <div class="portfolio__card-descs">
+          <button class="portfolio__button-close">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="23.2759" y="24.9999" width="32.9169" height="2.43829" transform="rotate(-135 23.2759 24.9999)" fill="#FFA04A"/>
+              <rect y="23.2758" width="32.9169" height="2.43829" transform="rotate(-45 0 23.2758)" fill="#FFA04A"/>
+            </svg>
+          </button>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Organisation:</span> American Education Company
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Links:</span>
+            <a class="portfolio__card-link" href="https://volkov85.github.io/american-education/" target="blank">volkov85.github.io/american-education</a>
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">My role in the project:</span> Full cycle - from a prototype to a functioning website.
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Technologies and tools:</span> Photoshop, HTML5, CSS3, JS, PHP
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Description:</span> This site was developed for American Education. The site has sections about US universities, summer camps for children, teaching English. The site has a feedback form. There is support for the mobile version.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio__darker portfolio__darker--book">
+      <div class="portfolio__card-inner">
+        <div class="portfolio__card-images">
+          <a href="img/portfolio_full_6.jpg" target="blank">
+            <img src="img/portfolio_maxi_6_1.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_6.jpg" target="blank">
+            <img src="img/portfolio_maxi_6_1.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_6.jpg" target="blank">
+            <img src="img/portfolio_maxi_6_1.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+          <a href="img/portfolio_full_6.jpg" target="blank">
+            <img src="img/portfolio_maxi_6_1.jpg" alt="Portfolio image" width="230" height="250">
+          </a>
+        </div>
+        <div class="portfolio__card-descs">
+          <button class="portfolio__button-close">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="23.2759" y="24.9999" width="32.9169" height="2.43829" transform="rotate(-135 23.2759 24.9999)" fill="#FFA04A"/>
+              <rect y="23.2758" width="32.9169" height="2.43829" transform="rotate(-45 0 23.2758)" fill="#FFA04A"/>
+            </svg>
+          </button>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Organisation:</span> Keksobooking educational project
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Links:</span>
+            <a class="portfolio__card-link" href="https://volkov85.github.io/693011-keksobooking-20/" target="blank">volkov85.github.io/693011-keksobooking-20</a>
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">My role in the project:</span> JavaScript development
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Technologies and tools:</span> JavaScript
+          </p>
+          <p class="portfolio__card-desc">
+            <span class="portfolio__card-desc--title">Description:</span> Training project - service for placing and viewing ads "Keksobuking". The service provides users with the ability to post ads about their real estate or view already posted ads. The JavaScript code that implements different functionality of the service is split into corresponding independent modules (IIFEs are used). Sending and receiving data from the server is implemented using AJAX (interaction with the server without page reloading).
           </p>
         </div>
       </div>

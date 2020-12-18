@@ -5,6 +5,14 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
 }
 
 .footer__text {
@@ -23,6 +31,10 @@
   display: flex;
   align-items: center;
   padding-bottom: 12px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .footer__text--tech {
