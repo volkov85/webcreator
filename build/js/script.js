@@ -44,12 +44,7 @@ $(".main-nav__item-link").on("click", function (evt) {
     let hash = this.hash;
     $("html, body").animate({
       scrollTop: $(hash).offset().top
-    }, 800, function () {
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      if (hash !== "#top") {
-        window.location.hash = hash;
-      }
-    });
+    }, 800);
   }
 });
 

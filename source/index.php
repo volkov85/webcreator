@@ -135,15 +135,27 @@
         <div class="portfolio__cards portfolio__cards--cert">
           <a href="https://assets.htmlacademy.ru/certificates/intensive/89/693011.pdf" class="portfolio__cards-button portfolio__cards-button--cert" target="_blank">
             <img src="img/crt1.jpg" alt="Certificate image mini" width="213" height="300">
+            <div class="portfolio__cards-titles portfolio__cards-titles--cert">
+              <p>HTML Academy</p>
+            </div>
           </a>
           <a href="https://assets.htmlacademy.ru/certificates/intensive/113/693011.pdf" class="portfolio__cards-button portfolio__cards-button--cert"  target="_blank">
             <img src="img/crt2.jpg" alt="Certificate image mini" width="213" height="300">
+            <div class="portfolio__cards-titles portfolio__cards-titles--cert">
+              <p>HTML Academy</p>
+            </div>
           </a>
           <a href="https://assets.htmlacademy.ru/certificates/intensive/167/693011.pdf" class="portfolio__cards-button portfolio__cards-button--cert"  target="_blank">
             <img src="img/crt3.jpg" alt="Portfolio image mini" width="213" height="300">
+            <div class="portfolio__cards-titles portfolio__cards-titles--cert">
+              <p>HTML Academy</p>
+            </div>
           </a>
           <a href="img/volkov_diploma-1.jpg" class="portfolio__cards-button portfolio__cards-button--cert portfolio__cards-button--cert-wayup"  target="_blank">
             <img src="img/crt4.jpg" alt="Portfolio image mini" width="300" height="180">
+            <div class="portfolio__cards-titles portfolio__cards-titles--certwayup">
+              <p>WayUp</p>
+            </div>
           </a>
         </div >
       </section>
@@ -184,7 +196,7 @@
             <span class="footer__text footer__text--tech">+</span>
             <img class="footer__logo" src="img/logo2.png" alt="Sass logotype" width="40" height="30">
             <img class="footer__logo" src="img/logo3.png" alt="Gulp logotype" width="14" height="30">
-            <img class="footer__logo" src="img/logo4.png" alt="NodeJS logotype" width="49" height="30">
+            <!-- <img class="footer__logo" src="img/logo4.png" alt="NodeJS logotype" width="49" height="30"> -->
             <img class="footer__logo" src="img/logo5.png" alt="Git logotype" width="69" height="30">
           </div>
           <p class="footer__text footer__text--rights">
@@ -378,7 +390,7 @@
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">Links:</span>
-            <a class="portfolio__card-link" href="https://rapidcards.webcreator.top" target="blank">rapidcards.webcreator.top</a>
+            <a class="portfolio__card-link" href="https://rapidcard.webcreator.top" target="blank">rapidcards.webcreator.top</a>
           </p>
           <p class="portfolio__card-desc">
             <span class="portfolio__card-desc--title">My role in the project:</span> Frontend development
@@ -468,10 +480,10 @@
             <span class="portfolio__card-desc--title">My role in the project:</span> JavaScript development
           </p>
           <p class="portfolio__card-desc">
-            <span class="portfolio__card-desc--title">Technologies and tools:</span> JavaScript
+            <span class="portfolio__card-desc--title">Technologies and tools:</span> Vanilla JavaScript
           </p>
           <p class="portfolio__card-desc">
-            <span class="portfolio__card-desc--title">Description:</span> Training project - service for placing and viewing ads "Keksobuking". The service provides users with the ability to post ads about their real estate or view already posted ads. The JavaScript code that implements different functionality of the service is split into corresponding independent modules (IIFEs are used). Sending and receiving data from the server is implemented using AJAX (interaction with the server without page reloading).
+            <span class="portfolio__card-desc--title">Description:</span> Training project - service for placing and viewing ads "Keksobooking". The service provides users with the ability to post ads about their real estate or view already posted ads. The JavaScript code that implements different functionality of the service is split into corresponding independent modules (IIFEs are used). Sending and receiving data from the server is implemented using AJAX (interaction with the server without page reloading).
           </p>
         </div>
       </div>

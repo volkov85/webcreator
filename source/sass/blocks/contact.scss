@@ -92,6 +92,7 @@
   box-sizing: inherit;
   width: 200px;
   height: 45px;
+  transition: 0.4s;
   background: $secondaryTextColor;
   color: $baseBackColor;
   font-weight: $fontOfferWeight;
@@ -99,4 +100,9 @@
   margin: 20px auto 0;
   border: 0;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: #fa8313;
+  }
 }
