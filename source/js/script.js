@@ -1,16 +1,30 @@
 'use strict';
 
+const portfolioCards = document.querySelectorAll('.portfolio__cards-button');
+const portfolioDarkerOstltd = document.querySelector('.portfolio__darker--ostltd');
+const portfolioDarkerNda = document.querySelector('.portfolio__darker--nda');
+const portfolioDarkerFant = document.querySelector('.portfolio__darker--fantshop');
+const portfolioDarkerRapid = document.querySelector('.portfolio__darker--rapid');
+const portfolioDarkerAe = document.querySelector('.portfolio__darker--ae');
+const portfolioDarkerBook = document.querySelector('.portfolio__darker--book');
+const portfolioButtonClose = document.querySelectorAll('.portfolio__button-close');
+const portfolioDarker = document.querySelectorAll('.portfolio__darker');
+const menuOpener = document.querySelector('.header__menu-toggle');
+const menuCloser = document.querySelector('.header__toggle--close');
+const menuMobile = document.querySelector('.menu-mobile');
+const alertClose = document.querySelector('.alert__close');
+
 /**
  * Animate value from 0 to value
  * @param {Object} elmnt - counter element
  * @param {number} value - final counter value
  * @param {number} duration - animation duration
  */
-function animateValue(elmnt, value, duration) {
-  var current = 0;
-  var increment = value > 0 ? 1 : -1;
-  var stepTime = Math.abs(Math.floor(duration / value));
-  var timer = setInterval(function () {
+const animateValue = (elmnt, value, duration) =>  {
+  let current = 0;
+  let increment = value > 0 ? 1 : -1;
+  let stepTime = Math.abs(Math.floor(duration / value));
+  let timer = setInterval(() => {
     current += increment;
     elmnt.textContent = current;
 
@@ -18,18 +32,16 @@ function animateValue(elmnt, value, duration) {
       clearInterval(timer);
     }
   }, stepTime);
-}
+};
 
-;
 /**
  * Smooth scrolling script
  */
-
-$("a").on("click", function (evt) {
+$(".main-nav__item-link").on("click", function (evt) {
   // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== "") {
     evt.preventDefault();
-    var hash = this.hash;
+    let hash = this.hash;
     $("html, body").animate({
       scrollTop: $(hash).offset().top
     }, 800, function () {
@@ -41,70 +53,60 @@ $("a").on("click", function (evt) {
   }
 });
 
-
-if(window.history.replaceState){
-  window.history.replaceState(null, null, window.location.href);
-}
-var alertClose = document.querySelector('.alert__close');
+/**
+ * PHPmailer popup alert hiding
+ */
 if (alertClose) {
-  alertClose.addEventListener('click', function (evt) {
-      var alertPopup = document.querySelector('.alert-success');
-      alertPopup.style = 'visibility: hidden;';
-      });
+  alertClose.addEventListener('click', () => {
+    const alertPopup = document.querySelector('.alert-success');
+    alertPopup.style = 'visibility: hidden;';
+  });
 }
 
-let portfolioCards = document.querySelectorAll('.portfolio__cards-button');
-let portfolioDarkerOstltd = document.querySelector('.portfolio__darker--ostltd');
-let portfolioDarkerNda = document.querySelector('.portfolio__darker--nda');
-let portfolioDarkerFant = document.querySelector('.portfolio__darker--fantshop');
-let portfolioDarkerRapid = document.querySelector('.portfolio__darker--rapid');
-let portfolioDarkerAe = document.querySelector('.portfolio__darker--ae');
-let portfolioDarkerBook = document.querySelector('.portfolio__darker--book');
-let portfolioButtonClose = document.querySelectorAll('.portfolio__button-close');
-let portfolioDarker = document.querySelectorAll('.portfolio__darker');
-
-portfolioButtonClose.forEach(function(item) {
-  item.addEventListener('click', function(evt) {
+/**
+ * Portfolio popup closing event
+ */
+portfolioButtonClose.forEach(item => {
+  item.addEventListener('click', evt => {
     evt.preventDefault();
-    portfolioDarker.forEach(function(item) {
-      item.classList.remove('portfolio__darker--opened');
-    })
+    portfolioDarker.forEach(item => item.classList.remove('portfolio__darker--opened'));
   });
 });
 
-portfolioCards.forEach(function(item) {
-  item.addEventListener('click', function(evt) {
-    evt.preventDefault();
-    if (item.classList.contains('portfolio__cards-button--ostltd')) {
-      portfolioDarkerOstltd.classList.add('portfolio__darker--opened');
-    }
-    if (item.classList.contains('portfolio__cards-button--nda')) {
-      portfolioDarkerNda.classList.add('portfolio__darker--opened');
-    }
-    if (item.classList.contains('portfolio__cards-button--fantshop')) {
-      portfolioDarkerFant.classList.add('portfolio__darker--opened');
-    }
-    if (item.classList.contains('portfolio__cards-button--rapid')) {
-      portfolioDarkerRapid.classList.add('portfolio__darker--opened');
-    }
-    if (item.classList.contains('portfolio__cards-button--ae')) {
-      portfolioDarkerAe.classList.add('portfolio__darker--opened');
-    }
-    if (item.classList.contains('portfolio__cards-button--book')) {
-      portfolioDarkerBook.classList.add('portfolio__darker--opened');
+/**
+ * Portfolio popup open event
+ */
+portfolioCards.forEach(item => {
+  item.addEventListener('click', () => {
+    switch (true) {
+      case item.classList.contains('portfolio__cards-button--ostltd'):
+        portfolioDarkerOstltd.classList.add('portfolio__darker--opened');
+        break;
+      case item.classList.contains('portfolio__cards-button--nda'):
+        portfolioDarkerNda.classList.add('portfolio__darker--opened');
+        break;
+      case item.classList.contains('portfolio__cards-button--fantshop'):
+        portfolioDarkerFant.classList.add('portfolio__darker--opened');
+        break;
+      case item.classList.contains('portfolio__cards-button--rapid'):
+        portfolioDarkerRapid.classList.add('portfolio__darker--opened');
+        break;
+      case item.classList.contains('portfolio__cards-button--ae'):
+        portfolioDarkerAe.classList.add('portfolio__darker--opened');
+        break;
+      case item.classList.contains('portfolio__cards-button--book'):
+        portfolioDarkerBook.classList.add('portfolio__darker--opened');
+        break;
     }
   });
 });
 
-// Menu toggler
-let menuOpener = document.querySelector('.header__menu-toggle');
-let menuCloser = document.querySelector('.header__toggle--close');
-let menuMobile = document.querySelector('.menu-mobile');
-
-menuOpener.addEventListener('click', function () {
+/**
+ * Mobile menu toggler
+ */
+menuOpener.addEventListener('click', () => {
   menuMobile.classList.remove('menu-mobile--closed');
 });
-
-menuCloser.addEventListener('click', function () {
+menuCloser.addEventListener('click', () => {
   menuMobile.classList.add('menu-mobile--closed');
 });
