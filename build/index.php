@@ -24,7 +24,7 @@
             <a href="#portfolio" class="main-nav__item-link">Portfolio</a>
           </li>
           <li class="main-nav__item main-nav__item--blog">
-            <a href="#">Blog</a>
+            <a href="">Blog</a>
           </li>
           <li class="main-nav__item">
             <a href="#contact" class="main-nav__item-link">Contact</a>
@@ -492,6 +492,6 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="js/particles.min.js"></script>
   <script src="js/particlesJS.js"></script>
-  <script src="js/jquery.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
   <script src="js/script.js"></script>
 </html>

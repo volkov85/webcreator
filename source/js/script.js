@@ -13,6 +13,7 @@ const menuOpener = document.querySelector('.header__menu-toggle');
 const menuCloser = document.querySelector('.header__toggle--close');
 const menuMobile = document.querySelector('.menu-mobile');
 const alertClose = document.querySelector('.alert__close');
+const mainNavItemLink = document.querySelectorAll('.main-nav__item-link');
 
 /**
  * Animate value from 0 to value
@@ -37,16 +38,19 @@ const animateValue = (elmnt, value, duration) =>  {
 /**
  * Smooth scrolling script
  */
-$(".main-nav__item-link").on("click", function (evt) {
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-    evt.preventDefault();
-    let hash = this.hash;
-    $("html, body").animate({
-      scrollTop: $(hash).offset().top
-    }, 800);
-  }
+mainNavItemLink.forEach(item => {
+  item.addEventListener('click', (evt) => {
+    if (evt.target.hash !== "") {
+      evt.preventDefault();
+      let hash = evt.target.hash;
+      document.querySelector(hash).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
 });
+
 
 /**
  * PHPmailer popup alert hiding
@@ -73,24 +77,27 @@ portfolioButtonClose.forEach(item => {
  */
 portfolioCards.forEach(item => {
   item.addEventListener('click', () => {
+    const openerClass = 'portfolio__darker--opened';
+    const containClass = 'portfolio__cards-button';
+
     switch (true) {
-      case item.classList.contains('portfolio__cards-button--ostltd'):
-        portfolioDarkerOstltd.classList.add('portfolio__darker--opened');
+      case item.classList.contains(`${containClass}--ostltd`):
+        portfolioDarkerOstltd.classList.add(openerClass);
         break;
-      case item.classList.contains('portfolio__cards-button--nda'):
-        portfolioDarkerNda.classList.add('portfolio__darker--opened');
+      case item.classList.contains(`${containClass}--nda`):
+        portfolioDarkerNda.classList.add(openerClass);
         break;
-      case item.classList.contains('portfolio__cards-button--fantshop'):
-        portfolioDarkerFant.classList.add('portfolio__darker--opened');
+      case item.classList.contains(`${containClass}--fantshop`):
+        portfolioDarkerFant.classList.add(openerClass);
         break;
-      case item.classList.contains('portfolio__cards-button--rapid'):
-        portfolioDarkerRapid.classList.add('portfolio__darker--opened');
+      case item.classList.contains(`${containClass}--rapid`):
+        portfolioDarkerRapid.classList.add(openerClass);
         break;
-      case item.classList.contains('portfolio__cards-button--ae'):
-        portfolioDarkerAe.classList.add('portfolio__darker--opened');
+      case item.classList.contains(`${containClass}--ae`):
+        portfolioDarkerAe.classList.add(openerClass);
         break;
-      case item.classList.contains('portfolio__cards-button--book'):
-        portfolioDarkerBook.classList.add('portfolio__darker--opened');
+      case item.classList.contains(`${containClass}--book`):
+        portfolioDarkerBook.classList.add(openerClass);
         break;
     }
   });
