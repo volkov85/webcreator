@@ -488,10 +488,9 @@
         </div>
       </div>
     </div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/particlesJS.js"></script>
+    <script src="js/script.js"></script>
   </body>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/particlesJS.js"></script>
-  <!-- <script src="js/jquery.min.js"></script> -->
-  <script src="js/script.js"></script>
 </html>
