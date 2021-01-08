@@ -14,6 +14,14 @@ const menuCloser = document.querySelector('.header__toggle--close');
 const menuMobile = document.querySelector('.menu-mobile');
 const alertClose = document.querySelector('.alert__close');
 const mainNavItemLink = document.querySelectorAll('.main-nav__item-link');
+const copyrightDate = document.querySelector('#copyright');
+
+/**
+ * Set current year into copyright
+ */
+let currentDate = new Date();
+currentDate = currentDate.getFullYear();
+copyrightDate.textContent = `©${currentDate} Artyom Volkov. All rights reserved.`;
 
 /**
  * Animate value from 0 to value

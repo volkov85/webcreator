@@ -17,16 +17,16 @@ if(isset($_POST['submit'])){
   try{
     $mail->isSMTP();
     $mail->Host       = 'server245.hosting.reg.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'admin@webcreator.top'; // Логин на почте
-    $mail->Password   = '3I2m2S1h'; // Пароль на почте
+    $mail->Username   = 'admin@artemvolkov.online'; // Логин на почте
+    $mail->Password   = '2V9r4M1o'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 587;
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->CharSet = "utf-8";
 
-    $mail->setFrom('admin@webcreator.top'); // Gmail address which you used as SMTP server
-    $mail->addAddress('admin@webcreator.top'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
+    $mail->setFrom('admin@artemvolkov.online'); // Gmail address which you used as SMTP server
+    $mail->addAddress('admin@artemvolkov.online'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Contact Page)';
@@ -40,7 +40,7 @@ if(isset($_POST['submit'])){
         //Получаем HTTP от recaptcha
         $recaptcha = $_REQUEST['g-recaptcha-response'];
         //Сюда пишем СЕКРЕТНЫЙ КЛЮЧ, который нам присвоил гугл
-        $secret = '6LcTx9EZAAAAAFI53dtu6y1kPJAJ00RPNHPByc3W';
+        $secret = '6LfSayQaAAAAAODeci0zIbrjl_zXQLCN3u3WbLd0';
         //Формируем utl адрес для запроса на сервер гугла
         $url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret ."&response=".$recaptcha."&remoteip=".$_SERVER['REMOTE_ADDR'];
 
