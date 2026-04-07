@@ -21,39 +21,6 @@ a {
   z-index: -1;
 }
 
-.alert-success {
-  z-index: 1;
-  background: #dadada;
-  font-size: 18px;
-  padding: 20px 40px;
-  min-width: 420px;
-  position: fixed;
-  right: 0;
-  top: 10px;
-  border-left: 8px solid #ffa04a;
-  border-radius: 4px;
-}
-
-.alert-error {
-  z-index: 1;
-  background: #fff3cd;
-  font-size: 18px;
-  padding: 20px 40px;
-  min-width: 420px;
-  position: fixed;
-  right: 0;
-  top: 10px;
-  border-left: 8px solid #ffa502;
-  border-radius: 4px;
-}
-
-.alert__close {
-  padding: 0;
-  color: #ffa502;
-  cursor: pointer;
-  margin-bottom: 0;
-}
-
 #particles-js {
   position: absolute;
   width: 100%;

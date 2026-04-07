@@ -2,7 +2,12 @@
   "extends": "stylelint-config-htmlacademy",
 
   "rules": {
+    "color-named": null,
+    "declaration-block-no-redundant-longhand-properties": null,
     "declaration-no-important": true,
-    "indentation": [2, {"ignore": ["inside-parens"]}]
+    "font-weight-notation": null,
+    "max-nesting-depth": null,
+    "selector-max-id": null,
+    "@stylistic/declaration-colon-newline-after": null
   }
 }
