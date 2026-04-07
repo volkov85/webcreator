@@ -41,28 +41,6 @@ const portfolioData = {
       { href: 'img/portfolio_full_3.jpg', src: 'img/portfolio_maxi_3_4.jpg', width: 230, height: 250 }
     ]
   },
-  ostltd: {
-    organization: 'OSTLtd Company',
-    links: [
-      {
-        href: 'https://ostltd.kz',
-        label: 'ostltd.kz'
-      },
-      {
-        href: 'https://ost.webcreator.top',
-        label: 'ost.webcreator.top'
-      }
-    ],
-    role: 'Full cycle - from a prototype to a functioning website.',
-    technologies: 'Figma, HTML5, CSS3, JS, PHP, SASS, Gulp',
-    description: 'This site for a company that is engaged in wholesale and retail sale of materials for the creation of advertising structures. The main priority is bright colors, modern design, easy navigation, structured catalog, feedback.',
-    images: [
-      { href: 'img/portfolio_full_1.jpg', src: 'img/portfolio_maxi_1.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_1.jpg', src: 'img/portfolio_maxi_2.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_1.jpg', src: 'img/portfolio_maxi_3.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_1.jpg', src: 'img/portfolio_maxi_4.jpg', width: 230, height: 250 }
-    ]
-  },
   rapid: {
     organization: 'Rapid Company',
     links: [
@@ -79,42 +57,6 @@ const portfolioData = {
       { href: 'img/portfolio_full_4.jpg', src: 'img/portfolio_maxi_4_2.jpg', width: 230, height: 200 },
       { href: 'img/portfolio_full_4.jpg', src: 'img/portfolio_maxi_4_3.jpg', width: 230, height: 200 },
       { href: 'img/portfolio_full_4.jpg', src: 'img/portfolio_maxi_4_4.jpg', width: 230, height: 200 }
-    ]
-  },
-  ae: {
-    organization: 'American Education Company',
-    links: [
-      {
-        href: 'https://volkov85.github.io/american-education/',
-        label: 'volkov85.github.io/american-education'
-      }
-    ],
-    role: 'Full cycle - from a prototype to a functioning website.',
-    technologies: 'Photoshop, HTML5, CSS3, JS, PHP',
-    description: 'This site was developed for American Education. The site has sections about US universities, summer camps for children, teaching English. The site has a feedback form. There is support for the mobile version.',
-    images: [
-      { href: 'img/portfolio_full_5.jpg', src: 'img/portfolio_maxi_5_1.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_5.jpg', src: 'img/portfolio_maxi_5_2.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_5.jpg', src: 'img/portfolio_maxi_5_3.jpg', width: 230, height: 227 },
-      { href: 'img/portfolio_full_5.jpg', src: 'img/portfolio_maxi_5_4.jpg', width: 230, height: 250 }
-    ]
-  },
-  book: {
-    organization: 'Keksobooking educational project',
-    links: [
-      {
-        href: 'https://volkov85.github.io/693011-keksobooking-20/',
-        label: 'volkov85.github.io/693011-keksobooking-20'
-      }
-    ],
-    role: 'JavaScript development',
-    technologies: 'Vanilla JavaScript',
-    description: 'Training project - service for placing and viewing ads "Keksobooking". The service provides users with the ability to post ads about their real estate or view already posted ads. The JavaScript code that implements different functionality of the service is split into corresponding independent modules (IIFEs are used). Sending and receiving data from the server is implemented using AJAX (interaction with the server without page reloading).',
-    images: [
-      { href: 'img/portfolio_full_6.jpg', src: 'img/portfolio_maxi_6_1.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_6.jpg', src: 'img/portfolio_maxi_6_1.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_6.jpg', src: 'img/portfolio_maxi_6_1.jpg', width: 230, height: 250 },
-      { href: 'img/portfolio_full_6.jpg', src: 'img/portfolio_maxi_6_1.jpg', width: 230, height: 250 }
     ]
   }
 };
