@@ -187,6 +187,7 @@ const menuMobile = document.querySelector('.menu-mobile');
 const mainNavItemLink = document.querySelectorAll('.main-nav__item-link');
 const copyrightDate = document.querySelector('#copyright');
 const particlesRoot = document.querySelector('#particles-js');
+const contactForm = document.querySelector('.contact__form');
 
 const updateCopyright = () => {
   if (!copyrightDate) {
@@ -350,6 +351,76 @@ const initMenu = () => {
   menuCloser.addEventListener('click', closeMenu);
 };
 
+const setContactFormStatus = (statusNode, type, message) => {
+  if (!statusNode) {
+    return;
+  }
+
+  statusNode.textContent = message;
+  statusNode.classList.remove('contact__status--success', 'contact__status--error');
+
+  if (type) {
+    statusNode.classList.add(`contact__status--${type}`);
+  }
+};
+
+const initContactForm = () => {
+  if (!contactForm) {
+    return;
+  }
+
+  const submitButton = contactForm.querySelector('.contact_button');
+  const statusNode = contactForm.querySelector('.contact__status');
+
+  contactForm.addEventListener('submit', async (evt) => {
+    evt.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    if (!contactForm.action || contactForm.action.includes('/your-form-id')) {
+      setContactFormStatus(statusNode, 'error', 'Add a real form endpoint in the form action attribute.');
+      return;
+    }
+
+    const defaultButtonText = submitButton ? submitButton.textContent : '';
+
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+    }
+
+    setContactFormStatus(statusNode, '', 'Sending your message...');
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method || 'POST',
+        body: new FormData(contactForm),
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Request failed with status ${response.status}`);
+      }
+
+      contactForm.reset();
+      setContactFormStatus(statusNode, 'success', 'Thanks. Your message has been sent.');
+    } catch (error) {
+      setContactFormStatus(statusNode, 'error', 'Failed to send the form. Check the endpoint and try again.');
+      window.console.error('Contact form submit failed:', error);
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = defaultButtonText;
+      }
+    }
+  });
+};
+
 const loadParticles = () => {
   if (!particlesRoot) {
     return;
@@ -386,4 +457,5 @@ updateCopyright();
 initSmoothScroll();
 initPortfolioModal();
 initMenu();
+initContactForm();
 window.addEventListener('load', loadParticles, {once: true});

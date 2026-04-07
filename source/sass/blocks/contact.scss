@@ -37,6 +37,14 @@
   }
 }
 
+.contact__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .contact__fields {
   border: none;
   padding: 0;
@@ -107,4 +115,23 @@
   &:focus {
     background: #fa8313;
   }
+
+  &[disabled] {
+    cursor: wait;
+    opacity: 0.7;
+  }
+}
+
+.contact__status {
+  min-height: 24px;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.contact__status--success {
+  color: #8bc34a;
+}
+
+.contact__status--error {
+  color: #ff7a7a;
 }

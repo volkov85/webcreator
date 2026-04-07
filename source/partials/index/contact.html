@@ -3,7 +3,26 @@
   <p class="contact__desc">
     Thanks for taking the time to reach out. How can I help you today?
   </p>
-  <form class="contact__form">
+  <form
+    class="contact__form"
+    action="https://formspree.io/f/mojprlgo"
+    method="post"
+  >
+    <input
+      type="hidden"
+      name="subject"
+      value="New portfolio message from {{ name }}"
+    />
+    <div class="contact__trap" aria-hidden="true">
+      <label for="contact-company">Company</label>
+      <input
+        id="contact-company"
+        type="text"
+        name="_gotcha"
+        tabindex="-1"
+        autocomplete="off"
+      />
+    </div>
     <fieldset class="contact__fields" title="Form fields">
       <div class="contact__wrapper">
         <input
@@ -12,6 +31,7 @@
           placeholder="Name"
           name="name"
           required
+          minlength="2"
           autocomplete="off"
         />
         <input
@@ -26,12 +46,14 @@
           class="contact__input contact__input--message"
           name="message"
           placeholder="Message"
+          minlength="10"
           maxlength="500"
           required
           autocomplete="off"
         ></textarea>
       </div>
     </fieldset>
-    <button class="contact_button" type="button">Send message</button>
+    <p class="contact__status" aria-live="polite"></p>
+    <button class="contact_button" type="submit">Send message</button>
   </form>
 </section>
