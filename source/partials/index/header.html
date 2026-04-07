@@ -1,0 +1,67 @@
+<header class="header">
+  <img
+    class="header__logo"
+    src="img/logo_white.svg"
+    width="230"
+    height="60"
+    alt="Logotype"
+  />
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a href="#about" class="main-nav__item-link">About</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#portfolio" class="main-nav__item-link">Portfolio</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#contact" class="main-nav__item-link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    class="header__menu-toggle"
+    type="button"
+    aria-controls="mobile-menu"
+    aria-expanded="false"
+  >
+    <span class="visually-hidden">Open menu</span>
+  </button>
+  <div
+    class="menu-mobile menu-mobile--closed"
+    id="mobile-menu"
+    aria-hidden="true"
+  >
+    <div class="menu-mobile__top">
+      <button class="header__toggle header__toggle--close" type="button">
+        <span class="visually-hidden">Close menu</span>
+      </button>
+    </div>
+    <ul class="menu-mobile__inner">
+      <li>
+        <a class="menu__item__inner main-nav__item-link" href="index.html"
+          >MAIN</a
+        >
+      </li>
+      <li>
+        <a class="menu__item__inner main-nav__item-link" href="index.html#about"
+          >ABOUT</a
+        >
+      </li>
+      <li>
+        <a
+          class="menu__item__inner main-nav__item-link"
+          href="index.html#portfolio"
+          >PORTFOLIO</a
+        >
+      </li>
+      <li>
+        <a
+          class="menu__item__inner main-nav__item-link"
+          href="index.html#contact"
+          >CONTACT</a
+        >
+      </li>
+    </ul>
+  </div>
+</header>

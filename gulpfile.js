@@ -66,6 +66,7 @@ function server() {
   watch("source/sass/**/*.{scss,sass}", css);
   watch("source/img/icon-*.svg", series(html, refresh));
   watch("source/*.html", series(html, refresh));
+  watch("source/partials/**/*.html", series(html, refresh));
   watch("source/js/*.js", series(jscompress, refresh));
 }
 

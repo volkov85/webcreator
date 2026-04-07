@@ -1,3 +1,5 @@
+@use "../globals" as *;
+
 .main {
   color: $baseTextColor;
   width: $mainDesktopWidth;

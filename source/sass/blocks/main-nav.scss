@@ -1,3 +1,5 @@
+@use "../globals" as *;
+
 .main-nav {
   @media (max-width: 768px) {
     display: none;
